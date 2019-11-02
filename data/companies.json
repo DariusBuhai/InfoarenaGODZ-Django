@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Vodafone",
+    "code": "VDF"
+  },
+  {
+    "name": "Diageo",
+    "code": "DIA"
+  },
+  {
+    "name": "Tesco",
+    "code": "TSC"
+  },
+  {
+    "name": "CRH",
+    "code": "CRH"
+  },
+  {
+    "name": "Experian",
+    "code": "EXP"
+  },
+  {
+    "name": "Barclays",
+    "code": "BRC"
+  }
+]

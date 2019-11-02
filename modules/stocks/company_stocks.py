@@ -47,6 +47,8 @@ class StockFeed():
             plt.plot(dates, prices)
             plt.show()
 
+            #plt.savefig('data/foo.png')
+
             return {"dates":dates, "times":dates, "prices":prices}
         except Exception as e:
             print(str(e))

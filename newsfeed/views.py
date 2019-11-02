@@ -74,3 +74,13 @@ def get_company_stocks(request, company):
     except Exception as e:
         return HttpResponse("Error: " + str(e))
 
+def get_classified_tweets_by_name(request, company):
+
+    try:
+        NFC = NewsFeedClassification()
+
+        tweets = NewsFeed.get_twitter_news(company)
+        tweets = NFC.classify_tweets(tweets)
+        return JsonResponse(tweets, safe=False)
+    except Exception as e:
+        return HttpResponse("Error: " + str(e))

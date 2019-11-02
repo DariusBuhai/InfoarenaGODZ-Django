@@ -1,6 +1,7 @@
 from modules.news.news_sources import NewsFeed
 import json
 from modules.classifiers.h1_classifier import H1CLASSIFIER
+from modules.classifiers.h2_classifier import H2CLASSIFIER
 
 class NewsFeedClassification():
 
@@ -11,19 +12,27 @@ class NewsFeedClassification():
 
         index = 0
         for new in news:
+            # use hash 1 classifier to add rating to the news
             PN = H1CLASSIFIER(new["title"], new["description"], new["content"])
             news[index]["Score"] = PN.get_hash1()
             index+=1
 
         return news
 
-    def classify_news_by_stock(self, news, stocks):
+    def classify_tweets(self, tweets):
 
         index = 0
-        for new in news:
-            PN = H1CLASSIFIER(new["title"], new["description"], new["content"])
-            news[index]["Score"] = PN.get_hash1()
-            index += 1
+        for tweet in tweets:
+            # use hash 1 classifier to add rating to the news
+            PN = H2CLASSIFIER(tweet["text"], tweet["shares"], tweet["likes"])
+            tweets[index]["Score"] = PN.get_hash2()
+            index+=1
+
+        return tweets
+
+    def relate_news_to_stocks(self, news, stocks):
+
+        news = self.classify_news(news) # apply rating to news
 
 
 

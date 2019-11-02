@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a2126b-4836-4fe6-b9e5-2408c878bf48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/classifiers/dataset/database_words.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/classifiers/dataset/negative.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/classifiers/dataset/positive.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/classifiers/h1_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/classifiers/h2_classifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/stocks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tweets.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tweets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/words_analysis.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/news/news_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/news/news_classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/stocks/company_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stocks/company_stocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572631803408</updated>
       <workItem from="1572631821075" duration="505000" />
-      <workItem from="1572683254499" duration="25265000" />
+      <workItem from="1572683254499" duration="27493000" />
     </task>
     <task id="LOCAL-00001" summary="Update 1">
       <created>1572706245337</created>

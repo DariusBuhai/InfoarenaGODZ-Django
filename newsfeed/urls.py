@@ -9,5 +9,6 @@ urlpatterns = [
     path('classified_news/<slug:company>', views.get_classified_news_by_name, name='get_classified_news_by_name'),
     path('news/<slug:company>', views.get_news_by_name, name='get_news_by_name'),
     path('tweets/<slug:company>', views.get_twitter_news_by_name, name='get_twitter_news_by_name'),
+    path('classified_tweets/<slug:company>', views.get_classified_tweets_by_name, name='get_classified_tweets_by_name'),
     path('stocks/<slug:company>', views.get_company_stocks, name='get_company_stocks'),
 ]

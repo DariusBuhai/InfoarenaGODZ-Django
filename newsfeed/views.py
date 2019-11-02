@@ -29,6 +29,7 @@ def get_companies(request):
 def get_news(request):
     try:
         news = NewsFeed.get_company_news('*')
+        test = NewsFeed.get_twitter_news(' ')
         return JsonResponse(news)
     except Exception as e:
         return HttpResponse("Error: " + str(e))
@@ -38,6 +39,14 @@ def get_news_by_name(request, company):
     try:
         news = NewsFeed.get_company_news(company)
         return JsonResponse(news)
+    except Exception as e:
+        return HttpResponse("Error: " + str(e))
+
+def get_twitter_news_by_name(request, company):
+    # Init
+    try:
+        news = NewsFeed.get_twitter_news(company)
+        return JsonResponse(news, safe=False)
     except Exception as e:
         return HttpResponse("Error: " + str(e))
 

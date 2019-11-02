@@ -1,18 +1,39 @@
 import requests
+import json
+import matplotlib.pyplot as plt
+from datetime import datetime
 
 class StockFeed():
 
     def get_company_stock(company_smb):
-        URL = "https://www.alphavantage.co/query"
 
-        # defining a params dict for the parameters to be sent to the API
-        PARAMS = {'apikey': 'R1C0A37LIQEXRV8A',
-                  'function': 'TIME_SERIES_DAILY_ADJUSTED',
-                  'symbol': company_smb}
+        # Limited requests 500 due to demo app
+        #URL = "https://www.alphavantage.co/query"
+        #PARAMS = {'apikey': 'R1C0A37LIQEXRV8A',
+                  #'function': 'TIME_SERIES_DAILY_ADJUSTED',
+                  #'symbol': company_smb}
+        #r = requests.get(url=URL, params=PARAMS)
+        #r = r.json()
 
-        # sending get request and saving the response as response object
-        r = requests.get(url=URL, params=PARAMS)
+        with open("data/stocks.json", "r") as a:
+            r = json.load(a)
+            r = r[company_smb]
 
-        return r.json()
+        try:
+            times = []
+            prices = []
+            for x in r["Time Series (Daily)"]:
+                times += [datetime.fromisoformat(x).timestamp()]
+                prices += [float(r["Time Series (Daily)"][x]["1. open"])]
+
+            # Show graph for debug only
+            plt.plot(times, prices)
+            plt.show()
+
+            return {"times":times, "prices":prices}
+        except Exception as e:
+            print(str(e))
+
+        return r
 
 

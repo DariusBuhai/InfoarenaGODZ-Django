@@ -1,26 +1,42 @@
 [
   {
     "name": "Vodafone",
-    "code": "VDF"
+    "code": "VOD"
   },
   {
     "name": "Diageo",
-    "code": "DIA"
+    "code": "DGE"
   },
   {
     "name": "Tesco",
-    "code": "TSC"
+    "code": "TSCO"
   },
   {
     "name": "CRH",
     "code": "CRH"
   },
   {
-    "name": "Experian",
-    "code": "EXP"
+    "name": "Smith & Nephew",
+    "code": "SN"
   },
   {
-    "name": "Barclays",
-    "code": "BRC"
+    "name": "BP",
+    "code": "BP"
+  },
+  {
+    "name": "National Grid",
+    "code": "NG"
+  },
+  {
+    "name": "Glencore",
+    "code": "GLEN"
+  },
+  {
+    "name": "Compass Group",
+    "code": "CPG"
+  },
+  {
+    "name": "Rio Tinto",
+    "code": "RIO"
   }
 ]

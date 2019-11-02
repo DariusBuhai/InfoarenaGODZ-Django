@@ -1,6 +1,9 @@
+# Django Libraries
 from django.http import HttpResponse
 from django.http import JsonResponse
 from newsapi import NewsApiClient
+
+# Modules
 from modules.news.news_sources import NewsFeed
 from modules.data.companies import DataCompanies
 from modules.news.news_classification import NewsFeedClassification
@@ -53,16 +56,20 @@ def get_twitter_news_by_name(request, company):
 def get_classified_news_by_name(request, company):
     # Init
     try:
+        NFC = NewsFeedClassification()
+
         news = NewsFeed.get_company_news(company)
-        news = NewsFeedClassification.classify_news(news)
-        return JsonResponse(news)
+        news = NFC.classify_news(news["articles"])
+        return JsonResponse(news, safe=False)
     except Exception as e:
         return HttpResponse("Error: " + str(e))
 
 def get_company_stocks(request, company):
     # Init
     try:
-        stocks = StockFeed.get_company_stock(company)
+        SF = StockFeed()
+
+        stocks = SF.get_company_stock(company)
         return JsonResponse(stocks)
     except Exception as e:
         return HttpResponse("Error: " + str(e))

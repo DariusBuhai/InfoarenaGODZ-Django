@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a2126b-4836-4fe6-b9e5-2408c878bf48" name="Default Changelist" comment="Update 2">
-      <change afterPath="$PROJECT_DIR$/modules/classifiers/h3_classifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/stocks/stocks_classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/companies.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/companies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/stocks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tweets.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tweets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/data/companies.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/data/companies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/news/news_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/news/news_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/news/news_sources.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/news/news_sources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/stocks/company_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stocks/company_stocks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/classifiers/h2_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/classifiers/h2_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/stocks/stocks_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stocks/stocks_classification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +92,7 @@
       <updated>1572631803408</updated>
       <workItem from="1572631821075" duration="505000" />
       <workItem from="1572683254499" duration="37756000" />
-      <workItem from="1572755434662" duration="9433000" />
+      <workItem from="1572755434662" duration="11213000" />
     </task>
     <task id="LOCAL-00001" summary="Update 1">
       <created>1572706245337</created>

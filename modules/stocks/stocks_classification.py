@@ -30,10 +30,8 @@ class StocksFeedClassification():
                 dop2["rating"] += [round(float(i[0]), 4)]
                 dop2["stock"] += [float(i[1])]
 
-
-
-            plt.plot(dop2["rating"], dop2["stock"])
-            plt.show()
+            #plt.plot(dop2["rating"], dop2["stock"])
+            #plt.show()
 
             return dop2
 

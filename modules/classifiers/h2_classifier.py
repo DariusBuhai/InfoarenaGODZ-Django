@@ -67,7 +67,7 @@ random_constant = get_random(8)
 for x in words:
     val = pos_count[x] - neg_count [x]
     if val != 0:
-        words[x] = ( val // abs(val) )  * math.log( abs(val) )
+        words[x] = ( val // abs(val) )  * math.log( 2 + abs(val) )
     else:
         words[x] = 0
 
@@ -110,7 +110,10 @@ class H2CLASSIFIER():
             val2 = 0
 
         val2 = val2 * max_range / max_tweets # translate the value to the range [0, max_range]
-        sgn = val1 // abs(val1)
+        if val1 != 0:
+            sgn = val1 // abs(val1)
+        else:
+            sgn = 1
 
         if val2 == 0 and val1 == 0:
             val3 = 0

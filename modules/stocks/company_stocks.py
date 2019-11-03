@@ -30,7 +30,7 @@ class StockFeed():
 
     def get_company_stock(self, company_smb):
 
-        #save_company_stock(9)
+        #save_company_stock(4)
 
         with open("data/stocks.json", "r") as a:
             r = json.load(a)
@@ -40,16 +40,19 @@ class StockFeed():
             dates = []
             prices = []
             for x in r["Time Series (Daily)"]:
-                dates += [datetime.fromisoformat(x).timestamp()]
-                prices += [float(r["Time Series (Daily)"][x]["1. open"])]
-
+                datex = datetime.fromisoformat(x)
+                if datex.month==10 and datex.year==2019:
+                    dates += [datex.day]
+                    prices += [float(r["Time Series (Daily)"][x]["1. open"])]
+            dates.reverse()
+            prices.reverse()
             # Show graph for debug only
-            plt.plot(dates, prices)
-            plt.show()
+            #plt.plot(dates, prices)
+            #plt.show()
 
             #plt.savefig('data/foo.png')
 
-            return {"dates":dates, "times":dates, "prices":prices}
+            return {"dates":dates, "prices":prices}
         except Exception as e:
             print(str(e))
 

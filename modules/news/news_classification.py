@@ -6,18 +6,21 @@ from modules.classifiers.h2_classifier import H2CLASSIFIER
 class NewsFeedClassification():
 
     def classify_news_by_company(company):
+
         return 0
 
     def classify_news(self, news):
 
         index = 0
+        news2 = []
         for new in news:
             # use hash 1 classifier to add rating to the news
-            PN = H1CLASSIFIER(new["title"], new["description"], new["content"])
-            news[index]["Score"] = PN.get_hash1()
-            index+=1
+            if new["title"]!=None and new["description"]!=None and new["content"]!=None:
+                PN = H1CLASSIFIER(new["title"], new["description"], new["content"])
+                new["Score"] = PN.get_hash1()
+                news2 += [new]
 
-        return news
+        return news2
 
     def classify_tweets(self, tweets):
 

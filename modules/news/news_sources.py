@@ -1,6 +1,8 @@
 from newsapi import NewsApiClient
 import requests
 import json
+from datetime import datetime
+from modules.stocks.company_stocks import StockFeed
 
 API_KEY = '2fdb18e9297a437ab91a7ec7669bed35'
 newsapi = NewsApiClient(api_key=API_KEY)
@@ -36,8 +38,20 @@ class NewsFeed():
         # extracting data in json format
         #data = r.json()
 
+        SF = StockFeed()
+        stocks = SF.get_company_stock(company_s)
+
         with open("data/tweets.json") as p:
             p = json.load(p)
             p = p[company_s]
+            index1 = 0
+            for tweet in p:
+                day1 = datetime.strptime(tweet["date"], "%d-%m-%Y").date().day
+                index = 0
+                p[index1]["stoc_price"] = 0
+                for day2 in stocks["dates"]:
+                    if day2==day1:
+                        p[index1]["stoc_price"] = stocks["prices"][index]
+                    index+=1
 
         return p

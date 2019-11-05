@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a2126b-4836-4fe6-b9e5-2408c878bf48" name="Default Changelist" comment="Update 2">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/classifiers/h2_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/classifiers/h2_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/stocks/stocks_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stocks/stocks_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoarenaGODZ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/InfoarenaGODZ/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/news/news_sources.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/news/news_sources.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -31,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
@@ -70,7 +86,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="172.16.27.221" />
+      <option name="host" value="192.168.0.101" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -92,7 +108,11 @@
       <updated>1572631803408</updated>
       <workItem from="1572631821075" duration="505000" />
       <workItem from="1572683254499" duration="37756000" />
-      <workItem from="1572755434662" duration="11213000" />
+      <workItem from="1572755434662" duration="14296000" />
+      <workItem from="1572776661529" duration="2730000" />
+      <workItem from="1572810352390" duration="24000" />
+      <workItem from="1572904207380" duration="61000" />
+      <workItem from="1572904452757" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="Update 1">
       <created>1572706245337</created>

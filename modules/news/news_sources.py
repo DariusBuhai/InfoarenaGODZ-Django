@@ -14,7 +14,7 @@ class NewsFeed():
         URL = "https://newsapi.org/v2/everything"
 
         # defining a params dict for the parameters to be sent to the API
-        PARAMS = {'apiKey': '2fdb18e9297a437ab91a7ec7669bed35',
+        PARAMS = {'apiKey': 'f0841974977e41febb90d6f83837435f',
                   'q' : company,
                   'sortBy':'popularity'}
 
